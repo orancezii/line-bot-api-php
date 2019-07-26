@@ -4,7 +4,7 @@
 		$KEY = "d1IJ15HaZotfqff"; //enter your web key
 		$SECRET = "eZUIIKLyjPmZcphuQhvhEQaVx"; //enter your secret
 		$Topic = "$topic";
-		if($msg =="on"){
+		/*if($msg =="on"){
 			$msg = "1";
 		}
 		else if($msg =="off"){
@@ -21,7 +21,7 @@
 		}
 		else{
 			//
-		}
+		}*/
 		put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
 	}
 	
